@@ -1,9 +1,9 @@
 <nav class="sidebar">
     <ul>
-        <li id="1" on:mouseenter={moveLink()}><a href="#home">Home</a></li>
-        <li id="2"><a href="#about">About the Ocean</a></li>
-        <li id="3"><a href="#gallery">Gallery</a></li>
-        <li id="4"><a href="#contact">Contact</a></li>
+        <li id="1" on:mouseenter={() => roulette()}><a href="#home">Home</a></li>
+        <li id="2" on:mouseenter={() => roulette()}><a href="#about">About the Ocean</a></li>
+        <li id="3" on:mouseenter={() => roulette()}><a href="#gallery">Gallery</a></li>
+        <li id="4" on:mouseenter={() => roulette()}><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 <style>
@@ -23,6 +23,9 @@
 
     nav li {
         margin: 20px 0;
+        align-content: center;
+        display: flex;
+        align-items: center;
     }
 
     nav a {
@@ -35,15 +38,18 @@
     }
 
     nav a:hover {
-        color: #ffffff;
+        color: #162751ff;
+        /*casual cursor*/
+        cursor: default;
     }
 </style>
 <script>
     import { onMount } from 'svelte';
-function moveLink(){
-    console.log("hello");
-    onMount(() => {
-        console.log('Menu component mounted');
-    });
+    import { gsap} from 'gsap';
+    import {random} from "gsap/gsap-core";
+
+
+function roulette(){
+    console.log(random(0, 4));
 }
 </script>

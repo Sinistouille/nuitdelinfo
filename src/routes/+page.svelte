@@ -1,6 +1,7 @@
 <script>
     // Vous pouvez ajouter des données dynamiques ici si nécessaire.
     import Menu from '$lib/components/menu.svelte';
+    import Footer from '$lib/components/footer.svelte';
 </script>
 
 <div class="container">
@@ -14,11 +15,38 @@
                 <p>The ocean covers over 70% of our planet and is home to an incredible diversity of life. Dive in to discover more!</p>
             </section>
         </main>
-        <footer>
-            <p>&copy; 2024 Ocean World. All rights reserved. | Follow us on <a href="#">Social Media</a></p>
-        </footer>
+        <Footer></Footer>
     </div>
 </div>
 <style>
+    .container {
+        display: flex;
+        min-height: 100vh;
+    }
 
+    /* Main content styles */
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #004d40;
+        margin-top: 30px;
+    }
+
+    p {
+        margin: 10px 0;
+    }
 </style>
