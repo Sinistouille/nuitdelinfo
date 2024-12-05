@@ -44,11 +44,7 @@
     }
 </style>
 <script>
-    import { onMount } from 'svelte';
     import { gsap} from 'gsap';
-    import {random} from "gsap/gsap-core";
-    import {redirect} from "@sveltejs/kit";
-    import {goto} from "$app/navigation";
 
 
 function roulette(){
