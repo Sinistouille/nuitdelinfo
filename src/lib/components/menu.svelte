@@ -64,6 +64,7 @@ function roulette(){
         ease: "power3.out", // Easing for smoothness
         transformOrigin: "center center", // Origin of transformation
     });
+
     gsap.to(img, {
         rotation: 10000, // Rotate the image (spin it)
         duration: 3, // Duration of rotation
