@@ -1,27 +1,29 @@
 <script>
+    import { organes } from "$lib/data/corps.js";
     import human_body from "$lib/assets/Human_With_All_Organs.png";
-    let clickedPart = ""; // Variable pour stocker la partie cliquée 
+    let curr = "inconnu";
+    let currOrganes = $state(organes[0]);
 
     function handleClick(event) {
         // Obtenez les dimensions de l'image
         const rect = event.target.getBoundingClientRect();
         const x = event.clientX - rect.left; // Position X relative à l'image
         const y = event.clientY - rect.top; // Position Y relative à l'image
-
         // zone du clique
         if (x > 200 && x < 240 && y > 250 && y < 300) {
-            clickedPart = "cœur";
+            curr = "coeur";
         } else if (x > 270 && x < 350 && y > 360 && y < 500) {
-            clickedPart = "rate";
+            curr = "rate";
         } else if (x > 150 && x < 270 && y > 0 && y < 100) {
-            clickedPart = "cerveau";
-        } else if (x > 100 && x < 290 && y > 200 && y < 350 ) {
-            clickedPart = "poumons";
+            curr = "cerveau";
+        } else if (x > 100 && x < 290 && y > 200 && y < 350) {
+            curr = "poumons";
         } else if (x > 100 && x < 270 && y > 360 && y < 500) {
-            clickedPart = "foie";
+            curr = "foie";
         } else {
-            clickedPart = "inconnu"; // Si le clic est en dehors des zones définies
+            curr = "inconnu"; // Si le clic est en dehors des zones définies
         }
+        currOrganes = organes.find((organe) => organe.id === curr);
     }
 </script>
 
@@ -34,8 +36,9 @@
         style="width: 400px; height: auto; border: 1px solid black;"
     />
 
-    <div class="info">
-        Partie identifiée : {clickedPart}
+    <div class="container">
+        <h1>{currOrganes.title}</h1>
+        <p>{currOrganes.content}</p>
     </div>
 </div>
 
@@ -44,10 +47,14 @@
         display: flex;
         justify-content: center;
         gap: 100px;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 10px 50px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
     }
-    .info {
-        margin-top: 10px;
-        font-size: 18px;
-        color: darkblue;
+    .container {
+       grid-area: 1;
     }
 </style>

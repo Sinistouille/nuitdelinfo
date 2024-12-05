@@ -1,5 +1,13 @@
 <footer>
-    <p>&copy; 2024 Ocean World. All rights reserved. | Follow us on <a href="#">Social Media</a></p>
+    <div>
+        <p>Race for water</p>
+        <p>lorem ipsum dolor sit amet</p>
+        <p>©2024 Race for water, All rights reserved</p>
+    </div>
+    <div>
+        <p>Tags</p>
+        <p>lorem ipsum dolor sit amet</p>
+    </div>  
 </footer>
 <style>
     /* Footer styles */
@@ -9,6 +17,7 @@
         text-align: center;
         padding: 10px;
         margin-top: 20px;
+        display : flex;
     }
 
     footer a {
@@ -19,6 +28,11 @@
     footer a:hover {
         color: #ffffff;
     }
+
+    footer div {
+        margin : 0 5% 0 5%;
+    }
+    
 </style>
 <script>
     import {gsap} from "gsap";
