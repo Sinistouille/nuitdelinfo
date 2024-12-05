@@ -1,7 +1,7 @@
 <nav class="sidebar">
     <ul>
         <li id="1" onmouseup={() => roulette()}><a>Accueil</a></li>
-        <li id="2" onmouseup={() => roulette()}><a>L'humain au coeur de l'océan</a></li>
+        <li id="2" onmouseup={() => roulette()}><a href="/corps">L'humain au coeur de l'océan</a></li>
         <li id="3" onmouseup={() => roulette()}><a>A propos</a></li>
         <li id="4" onmouseup={() => roulette()}><a>Contact</a></li>
     </ul>
@@ -25,12 +25,14 @@
         margin: 20px 0;
         align-content: center;
         display: flex;
+        justify-content: center;
         align-items: center;
     }
 
     nav a {
         color: #ffffff;
         text-decoration: none;
+        text-align: center;
         font-size: 1.2em;
         margin: auto;
         width: auto;
