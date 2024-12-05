@@ -50,12 +50,24 @@
 function roulette(){
 
     const img = document.getElementById("roulette");
+    const div = document.getElementById("div-roulette");
+    const p = document.getElementById("p-roulette");
     if(!img){
         console.error("Element with id 'roulette' not found.");
         return;
     }
+    if(!div){
+        console.error("Element with id 'div-roulette' not found.");
+        return;
+    }
 
     // Animate the image with GSAP to "pop" in
+    gsap.to(div, {
+        display: "block", // Make the image visible (handled outside GSAP, as GSAP can't animate `display`)
+        opacity: 1,
+        ease: "power3.out", // Easing for smoothness
+        transformOrigin: "center center", // Origin of transformation
+    });
     gsap.to(img, {
         display: "block", // Make the image visible (handled outside GSAP, as GSAP can't animate `display`)
         opacity: 1,
@@ -79,6 +91,13 @@ function roulette(){
         onComplete: () => {
             img.style.display = "none"; // Hide the image after the animation
         }
+    });
+    gsap.to(div, {
+        display: "none", // Make the image visible (handled outside GSAP, as GSAP can't animate `display`)
+        opacity: 0,
+        ease: "power3.out", // Easing for smoothness
+        transformOrigin: "center center", // Origin of transformation
+        delay: 3.2, // Delay to wait for 6 seconds before hiding
     });
     // let random = gsap.utils.random(1, 4,1);
     // switch (random){
