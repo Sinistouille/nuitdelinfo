@@ -1,6 +1,6 @@
 <script>
     import human_body from "$lib/assets/Human_With_All_Organs.png";
-    let clickedPart = ""; // Variable pour stocker la partie cliquée (poumons, foie, etc.)
+    let clickedPart = ""; // Variable pour stocker la partie cliquée 
 
     function handleClick(event) {
         // Obtenez les dimensions de l'image
@@ -9,10 +9,14 @@
         const y = event.clientY - rect.top; // Position Y relative à l'image
 
         // zone du clique
-        if (x > 100 && x < 290 && y > 200 && y < 350) {
-            clickedPart = "poumons";
+        if (x > 200 && x < 240 && y > 250 && y < 300) {
+            clickedPart = "cœur";
         } else if (x > 100 && x < 270 && y > 360 && y < 500) {
             clickedPart = "foie";
+        } else if (x > 150 && x < 270 && y > 0 && y < 100) {
+            clickedPart = "cerveau";
+        } else if (x > 100 && x < 290 && y > 200 && y < 350 ) {
+            clickedPart = "poumons";
         } else {
             clickedPart = "inconnu"; // Si le clic est en dehors des zones définies
         }
