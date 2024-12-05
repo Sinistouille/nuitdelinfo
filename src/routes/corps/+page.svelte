@@ -38,7 +38,7 @@
 
     <div class="container">
         <h1>{currOrganes.title}</h1>
-        <p>{currOrganes.content}</p>
+        <p>{@html currOrganes.content}</p>
     </div>
 </div>
 
