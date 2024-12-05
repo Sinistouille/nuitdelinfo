@@ -1,9 +1,9 @@
 <nav class="sidebar">
     <ul>
-        <li id="1" on:mouseenter={() => roulette()}><a href="#home">Home</a></li>
-        <li id="2" on:mouseenter={() => roulette()}><a href="#about">About the Ocean</a></li>
-        <li id="3" on:mouseenter={() => roulette()}><a href="#gallery">Gallery</a></li>
-        <li id="4" on:mouseenter={() => roulette()}><a href="#contact">Contact</a></li>
+        <li id="1" onmouseup={() => roulette()}><a>Accueil</a></li>
+        <li id="2" onmouseup={() => roulette()}><a>L'humain au coeur de l'océan</a></li>
+        <li id="3" onmouseup={() => roulette()}><a>A propos</a></li>
+        <li id="4" onmouseup={() => roulette()}><a>Contact</a></li>
     </ul>
 </nav>
 <style>
@@ -47,9 +47,48 @@
     import { onMount } from 'svelte';
     import { gsap} from 'gsap';
     import {random} from "gsap/gsap-core";
+    import {redirect} from "@sveltejs/kit";
+    import {goto} from "$app/navigation";
 
 
 function roulette(){
-    console.log(random(0, 4));
+
+    const img = document.getElementById("roulette");
+    if(!img){
+        console.error("Element with id 'roulette' not found.");
+        return;
+    }
+
+    // Animate the image with GSAP to "pop" in
+    gsap.to(img, {
+        display: "block", // Make the image visible (handled outside GSAP, as GSAP can't animate `display`)
+        opacity: 1,
+        scale: 3, // Full size
+        duration: 0.5, // Animation duration
+        ease: "power3.out", // Easing for smoothness
+        transformOrigin: "center center", // Origin of transformation
+    });
+    gsap.to(img, {
+        rotation: 10000, // Rotate the image (spin it)
+        duration: 3, // Duration of rotation
+        ease: "none", // No easing, continuous rotation
+    });
+    gsap.to(img, {
+        opacity: 0,
+        rotation: 0,
+        duration: 0,
+        delay: 3.2, // Delay to wait for 6 seconds before hiding
+        ease: "power3.in", // Ease in for the fade out effect
+        onComplete: () => {
+            img.style.display = "none"; // Hide the image after the animation
+        }
+    });
+    // let random = gsap.utils.random(1, 4,1);
+    // switch (random){
+    //     case 1:
+    //         goto("/corps");
+    //         break;
+    //
+    // }
 }
 </script>
