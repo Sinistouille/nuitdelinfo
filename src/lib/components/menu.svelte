@@ -1,7 +1,7 @@
 <nav class="sidebar">
     <ul>
         <li id="1" onmouseup={() => roulette()}><a>Accueil</a></li>
-        <li id="2" onmouseup={() => roulette()}><a href="/corps">L'humain au coeur de l'océan</a></li>
+        <li id="2" onmouseup={() => roulette()}><a>L'humain au coeur de l'océan</a></li>
         <li id="3" onmouseup={() => roulette()}><a>A propos</a></li>
         <li id="4" onmouseup={() => roulette()}><a>Contact</a></li>
     </ul>
@@ -47,6 +47,7 @@
 </style>
 <script>
     import { gsap} from 'gsap';
+    import {goto} from "$app/navigation";
 
 
 function roulette(){
@@ -101,12 +102,23 @@ function roulette(){
         transformOrigin: "center center", // Origin of transformation
         delay: 3.2, // Delay to wait for 6 seconds before hiding
     });
-    // let random = gsap.utils.random(1, 4,1);
-    // switch (random){
-    //     case 1:
-    //         goto("/corps");
-    //         break;
-    //
-    // }
+    let random = gsap.utils.random(1, 4,1);
+    switch (random){
+        case 1:
+            goto("/");
+            break;
+        case 2:
+            goto("/corps");
+            break;
+        case 3:
+            goto("/apropos");
+            break;
+        case 4:
+            goto("/");
+            break;
+        default:
+            goto("/");
+            break;
+    }
 }
 </script>
