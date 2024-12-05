@@ -102,23 +102,26 @@ function roulette(){
         transformOrigin: "center center", // Origin of transformation
         delay: 3.2, // Delay to wait for 6 seconds before hiding
     });
+
     let random = gsap.utils.random(1, 4,1);
-    switch (random){
-        case 1:
-            goto("/");
-            break;
-        case 2:
-            goto("/corps");
-            break;
-        case 3:
-            goto("/apropos");
-            break;
-        case 4:
-            goto("/");
-            break;
-        default:
-            goto("/");
-            break;
-    }
+    setTimeout(() => {
+        switch (random){
+            case 1:
+                goto("/");
+                break;
+            case 2:
+                goto("/corps");
+                break;
+            case 3:
+                goto("/apropos");
+                break;
+            case 4:
+                goto("/");
+                break;
+            default:
+                goto("/");
+                break;
+        }
+    }, 3200);
 }
 </script>
