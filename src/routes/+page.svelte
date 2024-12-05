@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import { gsap } from 'gsap';
+    import logo from '$lib/assets/Lyreco_Logo.png'
 
     onMount(() => {
         const width = window.innerWidth;
@@ -52,7 +53,7 @@
 <p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
 
-    <img src="https://via.placeholder.com/100" class="circle-image" alt="Circling Image" />
+    <img src={logo} class="circle-image" alt="Circling Image" />
     
     
     <div class="box gradient-green green"></div>
@@ -72,7 +73,6 @@
         width: 100%;
         height: 100vh;
         overflow: hidden;
-        background: linear-gradient(to bottom, #eef2f3, #8e9eab);
     }
 
     .circle-image {
