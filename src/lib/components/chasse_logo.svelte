@@ -2,6 +2,8 @@
     import { onMount } from "svelte";
     import gsap from "gsap";
     import logo from '$lib/assets/Lyreco_Logo.png'
+    import rickroll from '$lib/assets/rickroll.mp4'
+
   
     let tl;
   
@@ -111,29 +113,19 @@
   
   </script>
   
-  <div class="circle-image-container">
-  <h1>Welcome to your library project</h1>
-  <p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-  <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-  
   
       <img src={logo} class="circle-image no-opacity" alt="Circling with no opacity Image" onclick={findAnimation} onmouseenter={hoverAnimation}/>
       <img src={logo} class="circle-image under-all" alt="Circling with opacity Image" onclick={findAnimation} onmouseenter={hoverAnimation}/>
-  
-      <div class="box gradient-green green"></div>
-      <div class="box gradient-purple purple"></div>
-      <div class="box gradient-blue blue"></div>
+
   
       <iframe
-      src="..\..\lib\assets\rickroll.mp4"
+      src={rickroll}
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       id="rickroll"
       allowfullscreen>
       </iframe>
   
-      
-  </div>
   
   <style>
       #rickroll{
@@ -145,14 +137,7 @@
       }
   
       .under-all{
-          z-index: -1;
-      }
-  
-      .box {
-          margin: auto;
-          width: 300px;
-          height: 100%;
-          background: black;
+          z-index: 100;
       }
   
       .circle-image-container {

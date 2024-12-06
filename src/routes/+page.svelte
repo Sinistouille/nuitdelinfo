@@ -2,7 +2,7 @@
     import background from "$lib/assets/parallax wall.jpg";
     import ChasseLogo from "$lib/components/chasse_logo.svelte";
 </script>
-
+<ChasseLogo />
 <div class="HeaderRoot">
     <section id="about" class="HeaderSection">
         <h1 class="HeadingTitle">Welcome to Ocean World</h1>
