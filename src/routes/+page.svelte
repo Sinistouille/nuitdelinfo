@@ -5,7 +5,7 @@
 <ChasseLogo />
 <div class="HeaderRoot">
     <section id="about" class="HeaderSection">
-        <h1 class="HeadingTitle"></h1>
+        <h1 class="HeadingTitle">L'Humain au Coeur de l'Océan</h1>
         <p>
             Bienvenue dans une immersion unique qui changera votre rapport à l'océan
 
@@ -15,7 +15,8 @@
 <div id="content-descriptor">
 <p>
     Le but de cette expérience est de vous senbiliser à l'importance des océans dans la vie sur Terre.<br>
-    Mais aussi que cet océan a certaines fonctions qui pourraient être assimilées à celles du corps humains
+    Mais aussi que cet océan a certaines fonctions qui pourraient être assimilées à celles du corps humain.
+    A travers différentes éléments clickables, vous pourrez découvrir les différentes comparaisons proposées par notre équipe
 </p>
 </div>
 <style>
@@ -32,12 +33,14 @@
         padding-left: 20px;
         display: flex;
         flex-direction: column;
+        font-weight: bold;
     }
 
     .HeaderSection {
         color: #ffffff;
         font-size: 20px;
         text-align: center;
+
     }
     .HeadingTitle {
         color: #ffffff;
@@ -49,5 +52,8 @@
         font-family: "DM Sans", serif;
         font-optical-sizing: auto;
         font-style: normal;
+    }
+    #content-descriptor{
+        font-weight: bold;
     }
 </style>
