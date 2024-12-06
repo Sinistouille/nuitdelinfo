@@ -1,7 +1,7 @@
 <script>
     import background from "$lib/assets/parallax wall.jpg"
 </script>
-<div class="HeaderRoot" style='background-image: url({background});'>
+<div class="HeaderRoot">
     <section id="about" class="HeaderSection" >
 <h1 class="HeadingTitle">Welcome to Ocean World</h1>
 <p>
@@ -22,7 +22,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
-        min-height: 90dvh;
         padding-top: 50px;
         padding-left: 20px;
         display: flex;

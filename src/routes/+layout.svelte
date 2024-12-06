@@ -1,6 +1,7 @@
 <script>
     let { children } = $props();
     let showMenu = $state(false);
+    import background from "$lib/assets/parallax wall.jpg"
 
     // Vous pouvez ajouter des données dynamiques ici si nécessaire.
     import Menu from '$lib/components/menu.svelte';
@@ -17,7 +18,7 @@
         <span class="line"></span>
     </button>
     {/if}
-    <div class="content">
+    <div class="content"  style='background-image: url({background});'>
         <main>
             {@render children()}
         </main>

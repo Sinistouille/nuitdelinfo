@@ -14,7 +14,6 @@
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         background: #162751ff;
         font-weight: bold;
-        height: 100%;
         min-height: fit-content;
     }
 

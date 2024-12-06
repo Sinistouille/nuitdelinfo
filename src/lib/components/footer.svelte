@@ -13,17 +13,20 @@
 <style>
     /* Footer styles */
     footer {
-        background-color: #162751;
+        background-color: #11111180;
         color: #ffffff;
         text-align: center;
         padding: 10px;
-        margin: 20px 0 0 20px;
+        margin: 20px 0 0 0;
         display : flex;
     }
 
-    footer a {
-        color: #b2dfdb;
+    footer p {
         text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        opacity: 1;
     }
 
     footer a:hover {
