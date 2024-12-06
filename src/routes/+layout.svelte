@@ -9,14 +9,14 @@
 </script>
 
 <div class="container">
-    {#if showMenu} 
-    <Menu></Menu>
+    {#if showMenu}
+        <Menu></Menu>
     {:else}
-     <button class="hamburger-button" onclick={() => showMenu = !showMenu}>
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-    </button>
+        <button class="hamburger-button" onclick={() => showMenu = !showMenu}>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
     {/if}
     <div class="content"  style='background-image: url({background});'>
         <main>
@@ -26,31 +26,34 @@
     </div>
 </div>
 <style>
-            /* Bouton hamburger */
-            .hamburger-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 50px;
-            height: 50px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
+    main{
+        margin-left: 20px;
+    }
+    /* Bouton hamburger */
+    .hamburger-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
 
-        /* Lignes du menu */
-        .hamburger-button .line {
-            width: 100%;
-            height: 5px;
-            background-color: #ffffff;
-            border-radius: 2px;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
+    /* Lignes du menu */
+    .hamburger-button .line {
+        width: 100%;
+        height: 5px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
 
     .container {
         display: flex;

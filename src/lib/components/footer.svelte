@@ -4,11 +4,9 @@
         <p class="anim">Contactez nous</p>
         <p class="anim">Instagram</p>
         <p class="anim">Facebook</p>
-    </div>
-    <div>
         <p class="anim">Tags</p>
         <p class="anim">lorem ipsum dolor sit amet</p>
-    </div>  
+    </div>
 </footer>
 <style>
     /* Footer styles */
@@ -29,9 +27,6 @@
         opacity: 1;
     }
 
-    footer a:hover {
-        color: #ffffff;
-    }
 
     footer div {
         margin : 0 5% 0 5%;
