@@ -17,6 +17,8 @@
         background: #162751ff;
         font-weight: bold;
         min-height: fit-content;
+        display: flex;
+        align-items: center;
     }
 
     nav ul {
