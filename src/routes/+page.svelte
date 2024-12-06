@@ -1,20 +1,22 @@
 <script>
-    import background from "$lib/assets/parallax wall.jpg"
+    import background from "$lib/assets/parallax wall.jpg";
 </script>
+
 <div class="HeaderRoot">
-    <section id="about" class="HeaderSection" >
-<h1 class="HeadingTitle">Welcome to Ocean World</h1>
-<p>
-    Explore the depths of the ocean and its wonders. Learn about marine life,
-    oceanography, and how to protect our seas.
-</p>
-</section>
+    <section id="about" class="HeaderSection">
+        <h1 class="HeadingTitle">Welcome to Ocean World</h1>
+        <p>
+            Explore the depths of the ocean and its wonders. Learn about marine
+            life, oceanography, and how to protect our seas.
+        </p>
+    </section>
 </div>
 <h2>About the Ocean</h2>
 <p>
     The ocean covers over 70% of our planet and is home to an incredible
     diversity of life. Dive in to discover more!
 </p>
+
 <style>
     .HeaderRoot {
         background-attachment: fixed;
@@ -45,4 +47,3 @@
         font-style: normal;
     }
 </style>
-

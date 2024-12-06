@@ -6,8 +6,9 @@
     // Vous pouvez ajouter des données dynamiques ici si nécessaire.
     import Menu from '$lib/components/menu.svelte';
     import Footer from '$lib/components/footer.svelte';
+    import CookieCauchemar from '$lib/components/cookie_cauchemar.svelte'
 </script>
-
+<CookieCauchemar />
 <div class="container">
     {#if showMenu}
         <Menu></Menu>
