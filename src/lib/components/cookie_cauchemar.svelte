@@ -1,7 +1,14 @@
 <script>
     import logorace from "$lib/assets/logo race water.jpg"
-
+    import cookie from "$lib/assets/cookie.jpg"
     let showPopUp = $state(true);
+    let ChainPopUp = $state(0);
+    let counter = $state(0);
+
+    function increase() {
+        counter += 1;
+        showPopUp = counter < 100;
+    }
 </script>
 {#if showPopUp}
     
@@ -12,13 +19,28 @@
             Votre confidentialité, notre priorité.
         </header>
         <p id="cookie_para">
+            {#if ChainPopUp === 0}
             Nous utilisons les cookies pour vous offrir une expérience optimale.
             <br />Nous utilisons les cookies à des fins légitimes de marketing,
             <br />grâce à nos <u>1017 partenaires</u>.
+            {:else if ChainPopUp === 1}
+            Les cookies sont des petits fichiers texte qui sont placés sur votre ordinateur par un site web que vous visitez. Ils permettent au site web de stocker des informations telles que vos préférences de navigation, votre langue préférée, vos informations de connexion, et bien plus encore. En fait, les cookies jouent un rôle crucial dans l'amélioration de votre expérience utilisateur en retenant vos préférences personnelles et en vous évitant de devoir les ressaisir à chaque visite sur le site. De plus, nous utilisons les cookies pour des stratégies de marketing sophistiquées, vous présentant des publicités qui sont non seulement ciblées mais aussi adaptées à vos intérêts et habitudes de navigation. En matière de sécurité, les cookies sont également essentiels pour garantir la protection de votre compte, en empêchant par exemple une connexion multiple avec le même compte utilisateur. Par ailleurs, ils nous aident à analyser les comportements de navigation des utilisateurs, ce qui nous permet de raffiner et d'optimiser continuellement votre expérience sur notre plateforme. Actuellement, nous collaborons avec un réseau étendu de <u>1017 partenaires</u> pour une gestion efficace et sécurisée des cookies sur notre site web. À travers cette infrastructure, nous nous engageons à respecter votre vie privée tout en vous offrant une expérience en ligne enrichissante et sans friction.
+            {:else}
+            Pour garantir votre sécurité et améliorer votre expérience, nous vous demandons de cliquer 100 fois sur le cookie. Ce processus assure que vous comprenez pleinement les avantages des cookies tout en respectant votre choix de les refuser.
+            <br>
+            <img src={cookie} onclick={increase}/>
+            <br> {counter}
+            {/if}
         </p>
         <div class="buttons">
-            <button class="consentButton" onclick={() => showPopUp = false}>Accepter</button>
-            <button class="rejectButton">En savoir plus</button>
+            <button class= {ChainPopUp === 1 ? "consentButton red" : "consentButton"} onclick={() => showPopUp = false}>Accepter</button>
+            <button class="rejectButton" onclick={() => ChainPopUp += 1} style={ChainPopUp > 1 ? "display: none":""}>
+                {#if ChainPopUp === 0}
+                    En savoir plus
+                {:else if ChainPopUp === 1}
+                   Refuser les cookies
+                {/if}
+            </button>
         </div>
     </div>
 </div>
