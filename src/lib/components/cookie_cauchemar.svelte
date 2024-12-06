@@ -34,7 +34,7 @@
         </p>
         <div class="buttons">
             <button class= {ChainPopUp === 1 ? "consentButton red" : "consentButton"} onclick={() => showPopUp = false}>Accepter</button>
-            <button class="rejectButton" onclick={() => ChainPopUp += 1}>
+            <button class="rejectButton" onclick={() => ChainPopUp += 1} style={ChainPopUp > 1 ? "display: none":""}>
                 {#if ChainPopUp === 0}
                     En savoir plus
                 {:else if ChainPopUp === 1}
