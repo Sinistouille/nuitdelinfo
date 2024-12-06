@@ -3,13 +3,17 @@
     let showMenu = $state(false);
     import cross from "$lib/assets/cross.svg";
     import background from "$lib/assets/parallax wall.jpg";
+    import roulette from "$lib/assets/roulette.png";
 
     // Vous pouvez ajouter des données dynamiques ici si nécessaire.
     import Menu from "$lib/components/menu.svelte";
     import Footer from "$lib/components/footer.svelte";
     import CookieCauchemar from "$lib/components/cookie_cauchemar.svelte";
 </script>
-
+<div id="div-roulette">
+    <img src={roulette} id="roulette"/>
+    <p id="p-roulette">La roulette choisit votre prochaine page</p>
+</div>
 <CookieCauchemar />
 <div class="container">
     {#if showMenu}
