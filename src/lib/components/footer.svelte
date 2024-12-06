@@ -1,12 +1,13 @@
 <footer>
+
     <div>
-        <p>Race for water</p>
-        <p>lorem ipsum dolor sit amet</p>
-        <p>©2024 Race for water, All rights reserved</p>
+        <p class="anim">Race for water</p>
+        <p class="anim">lorem ipsum dolor sit amet</p>
+        <p class="anim">©2024 Race for water, All rights reserved</p>
     </div>
     <div>
-        <p>Tags</p>
-        <p>lorem ipsum dolor sit amet</p>
+        <p class="anim">Tags</p>
+        <p class="anim">lorem ipsum dolor sit amet</p>
     </div>  
 </footer>
 <style>
@@ -32,7 +33,24 @@
     footer div {
         margin : 0 5% 0 5%;
     }
+    .anim{
+  animation-duration: 3s;
+  animation-name: slidein;
+ 
+  }
     
+  @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 </style>
 <script>
     import {gsap} from "gsap";
