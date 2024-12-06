@@ -1,9 +1,9 @@
 <footer>
 
     <div>
-        <p class="anim">Race for water</p>
-        <p class="anim">lorem ipsum dolor sit amet</p>
-        <p class="anim">©2024 Race for water, All rights reserved</p>
+        <p class="anim">Contactez nous</p>
+        <p class="anim">Instagram</p>
+        <p class="anim">Facebook</p>
     </div>
     <div>
         <p class="anim">Tags</p>
