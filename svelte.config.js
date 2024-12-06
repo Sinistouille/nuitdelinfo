@@ -6,7 +6,7 @@ const config = {
 		adapter: adapter(),
 		// Configuration des chemins
 		paths: {
-			base: '/sveltekit-github-pages'
+			base: '/nuitdelinfo'
 		}
 	}
 };
