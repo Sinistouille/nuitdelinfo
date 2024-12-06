@@ -45,10 +45,8 @@
 <style>
     .body-wrapper {
         display: flex;
-        justify-content: center;
         gap: 100px;
         align-items: flex-start;
-        justify-content: center;
         margin: 10px 50px;
         background-color: white;
         padding: 20px;
