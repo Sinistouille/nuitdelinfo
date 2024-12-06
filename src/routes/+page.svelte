@@ -12,13 +12,17 @@
         </p>
     </section>
 </div>
+<div id="content-descriptor">
 <h2>About the Ocean</h2>
 <p>
     The ocean covers over 70% of our planet and is home to an incredible
     diversity of life. Dive in to discover more!
 </p>
-
+</div>
 <style>
+    #content-descriptor{
+        margin: 20px;
+    }
     .HeaderRoot {
         background-attachment: fixed;
         background-position: center;

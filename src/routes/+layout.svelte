@@ -28,9 +28,6 @@
     </div>
 </div>
 <style>
-    main{
-        margin-left: 20px;
-    }
     /* Bouton hamburger */
     .hamburger-button {
         position: absolute;
