@@ -39,4 +39,10 @@ export const organes = [
 			<p>De la même façon, l’océan a ses mécanismes de nettoyage intégrés. Les océans sont vastes et en constante agitation grâce aux courants marins, aux vagues et aux marées. Ces mouvements permettent de diluer les polluants, réduisant leur concentration locale. Ensuite, des micro-organismes marins jouent un rôle clé en dégradant certains polluants organiques, tels que les hydrocarbures. Ces organismes transforment les substances toxiques en composés moins nocifs ou inoffensifs.</p>
 			<p>Malheureusement, cette mécanique bien réglée est mise à mal par le changement climatique qui, en augmentant la température de l’eau, augmente son absorption de CO2. Cela cause une acidification des océans qui est nocive pour les organismes marins, dont ceux qui sont essentiels à la régulation des polluants ! Et là, l’océan tombe malade…</p>`
 	},
+	{
+		id: 'inconnu',
+		title: 'Choisissez un organe',
+		content:
+			'Cliquez sur un organe ogheuogheaurogheuoeghzioghizoghzeioghiozghzioghzioghzioue'
+	},
 ];
