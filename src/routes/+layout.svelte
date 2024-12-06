@@ -8,6 +8,7 @@
     import Footer from '$lib/components/footer.svelte';
     import CookieCauchemar from '$lib/components/cookie_cauchemar.svelte'
 </script>
+
 <CookieCauchemar />
 <div class="container">
     {#if showMenu}
@@ -58,8 +59,7 @@
 
     .container {
         display: flex;
-        min-height: 100vh;
-        flex-direction: column;
+        height: 100%;
     }
 
     /* Main content styles */

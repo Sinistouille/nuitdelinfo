@@ -14,7 +14,6 @@
         background-color: #11111180;
         color: #ffffff;
         text-align: center;
-        padding: 10px;
         margin: 20px 0 0 0;
         display : flex;
     }

@@ -8,25 +8,27 @@
 </nav>
 <style>
     nav {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        width: 250px;
         color: #ffffff;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         background: #162751ff;
         font-weight: bold;
+        min-height: fit-content;
     }
 
     nav ul {
         list-style: none;
         padding: 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 70%;
+        margin: 0;
     }
 
     nav li {
-        margin: 0 30px; /* Ajustez l'espacement entre les éléments */
+        margin: 20px 0;
         align-content: center;
         display: flex;
         justify-content: center;
