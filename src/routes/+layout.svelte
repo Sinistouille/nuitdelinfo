@@ -59,6 +59,7 @@
     .container {
         display: flex;
         min-height: 100vh;
+        flex-direction: column;
     }
 
     /* Main content styles */
