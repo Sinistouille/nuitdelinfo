@@ -26,7 +26,6 @@
         currOrganes = organes.find((organe) => organe.id === curr);
     }
 </script>
-
 <h1>Cliquer sur l'image pour identifier une partie</h1>
 <div class="body-wrapper">
     <img
@@ -37,7 +36,10 @@
     />
 
     <div class="container">
+        <div class="OrganeTitle">
+            <img src={currOrganes.image} alt={currOrganes.id}/>
         <h1>{currOrganes.title}</h1>
+        </div>
         <p>{@html currOrganes.content}</p>
     </div>
 </div>
@@ -54,5 +56,9 @@
     }
     .container {
        grid-area: 1;
+    }
+    .OrganeTitle {
+        display: flex;
+        align-items: center;
     }
 </style>

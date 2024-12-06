@@ -1,7 +1,10 @@
+import coeur from '$lib/assets/coeur.png'
+
 export const organes = [
 	{
 		id: 'coeur',
 		title: 'Le Cœur',
+		image: coeur,
 		content:
 			`<p>La base de l'humanité, le symbole de la passion. Le cœur humain pompe avec ardeur, nourrit le corps tout entier, et on retrouve la même ardeur, bien que moins visible. L’océan, aussi vaste et abyssal soit-il, tourne et se renouvelle à la manière d’un sang azur grâce à la circulation thermohaline, ou on peut également parler de circulation méridienne de retournement, et ce système si technique façonné par Mère Nature ne doit être détraqué.</p>
 			<p>Malheureusement, cette sagesse n’a pas forcément été instruite, ou peut-être oubliée, et son bon fonctionnement en a fini déséquilibré. Le ralentissement de la circulation méridienne de retournement, selon de nombreux experts, s’accompagne de conséquences désastreuses comme des saisons plus marquées, des tempêtes plus fréquentes et une augmentation du niveau des mers. Ces symptômes sont ceux d’un cœur de la mer malade, assurément, tout comme un cœur humain malade se ferait sentir par des affaiblissements, des malaises, et d'autres symptômes.</p>
