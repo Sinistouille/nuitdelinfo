@@ -12,8 +12,8 @@ export const organes = [
 			<p>Malheureusement, cette sagesse n’a pas forcément été instruite, ou peut-être oubliée, et son bon fonctionnement en a fini déséquilibré. Le ralentissement de la circulation méridienne de retournement, selon de nombreux experts, s’accompagne de conséquences désastreuses comme des saisons plus marquées, des tempêtes plus fréquentes et une augmentation du niveau des mers. Ces symptômes sont ceux d’un cœur de la mer malade, assurément, tout comme un cœur humain malade se ferait sentir par des affaiblissements, des malaises, et d'autres symptômes.</p>
 			<p>Tout comme l’homme doit prendre soin de son organe le plus important, il faut faire attention à ne pas perturber le flux de la circulation thermohaline en mer, et ça passe par de la prévention (comme on le fait maintenant) et de l’action (de vous principalement !)</p>
    			<p>En résumé, on peut assimiler les courants marins au système sanguin, y voir un lien inextricable de l’un à l’autre, une similitude de l’évolution ou un synonyme du destin, on ne saurait le dire, mais assurément, il ne peut s’agir d’une coïncidence.</p>
-      			<p>Source : https://fr.wikipedia.org/wiki/Circulation_thermohaline</p>
-	 		<p>Source : https://www.ipsl.fr/decouvrir/voir-et-faire/un-phenomene-une-manip/la-circulation-thermohaline/#:~:text=On%20parle%20de%20la%20circulation,salinit%C3%A9%2C%20%C2%AB%20halin%20%C2%BB).</p>
+      			<p>Source : <a href=https://fr.wikipedia.org/wiki/Circulation_thermohaline>Wikipedia</a></p>
+	 		<p>Source : <a href=https://www.ipsl.fr/decouvrir/voir-et-faire/un-phenomene-une-manip/la-circulation-thermohaline/#:~:text=On%20parle%20de%20la%20circulation,salinit%C3%A9%2C%20%C2%AB%20halin%20%C2%BB)>ipsl </a>.</p>
 			`
 	},
 
