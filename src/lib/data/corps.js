@@ -1,4 +1,6 @@
 import coeur from '$lib/assets/coeur.png'
+import poumons from '$lib/assets/poumons.jpg'
+import foie from '$lib/assets/foie.jpg'
 
 export const organes = [
 	{
@@ -28,6 +30,7 @@ export const organes = [
     {
 		id: 'poumons',
 		title: 'Les Poumons',
+		image: poumons,
 		content:
 			`<p>Le besoin le plus vital du corps humain est l’oxygène. En tant que tel, notre corps nécessite plus que tout d’être oxygéné au travers du sang, tout comme la circulation thermohaline fait traverser les eaux, et un fléau qui frappe tout autant les océans que nos corps peut être la désoxygénation. Et si votre cerveau ne recevait plus d’oxygène hein ? Vous le savez clairement, ça entraînerait de graves conséquences, court ou long terme.</p>
 			<p>Et il faut bien s’imaginer que c’est quelque chose qui arrive très fréquemment pour notre océan, l’accumulation de dioxyde de carbone crée des zones de désoxygénation graves, qui entraînent le réchauffement climatique (c’en est une cause reconnue) et aussi l’eutrophisation. L’eutrophisation, il s’agit de zones ultra concentrées en nutriments, qui sont dangereuses car ça sature et empêche la propagation de ces nutriments. Imaginez que votre corps soit saturé de nutriments en un seul endroit, laissant le reste affamé, c’est ce qui se passe.</p>`
@@ -35,6 +38,7 @@ export const organes = [
     {
 		id: 'foie',
 		title: 'Le Foie',
+		image: foie,
 		content:
 			`<p>Notre corps est bien fait : il est équipé de ses propres usines de purification : les reins et le foie.</p>
 			<p>D’abord, le foie transforme les substances toxiques (alcool, médicaments, produits chimiques) en composés moins nocifs pour être éliminés via les reins ou les intestins. Le foie produit aussi de la bile, un liquide qui aide à éliminer les déchets liposolubles (cholestérol, toxines). De leur côté, les reins filtrent le sang pour en éliminer les déchets. Le sang arrive dans les reins et passe à travers les glomérules, où l'eau, les sels, les déchets (comme l'urée), et d'autres petites molécules sont filtrés. Les déchets et substances inutiles sont ensuite acheminés vers la vessie sous forme d’urine. Les bonnes substances (glucose, acides aminés…) sont ensuite réabsorbées par le sang.</p>
