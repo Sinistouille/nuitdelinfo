@@ -1,5 +1,6 @@
 <script>
     import background from "$lib/assets/parallax wall.jpg";
+    import ChasseLogo from "$lib/components/chasse_logo.svelte";
 </script>
 
 <div class="HeaderRoot">
