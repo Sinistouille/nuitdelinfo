@@ -1,33 +1,49 @@
 <script>
     let { children } = $props();
     let showMenu = $state(false);
-    import background from "$lib/assets/parallax wall.jpg"
+    import cross from "$lib/assets/cross.svg";
+    import background from "$lib/assets/parallax wall.jpg";
 
     // Vous pouvez ajouter des données dynamiques ici si nécessaire.
-    import Menu from '$lib/components/menu.svelte';
-    import Footer from '$lib/components/footer.svelte';
-    import CookieCauchemar from '$lib/components/cookie_cauchemar.svelte'
+    import Menu from "$lib/components/menu.svelte";
+    import Footer from "$lib/components/footer.svelte";
+    import CookieCauchemar from "$lib/components/cookie_cauchemar.svelte";
 </script>
 
 <CookieCauchemar />
 <div class="container">
     {#if showMenu}
+        <div class="close-button" onclick={() => showMenu = !showMenu}><img src={cross} alt="fermer le menu" /></div>
         <Menu></Menu>
     {:else}
-        <button class="hamburger-button" onclick={() => showMenu = !showMenu}>
+        <button class="hamburger-button" onclick={() => (showMenu = !showMenu)}>
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
         </button>
     {/if}
-    <div class="content"  style='background-image: url({background});'>
+    <div class="content" style="background-image: url({background});">
         <main>
             {@render children()}
         </main>
         <Footer></Footer>
     </div>
 </div>
+
 <style>
+    .close-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 15;
+    }
+    .close-button img {
+        width: 100%;
+        height: auto;
+    }
 
     /* Bouton hamburger */
     .hamburger-button {
@@ -52,7 +68,9 @@
         height: 5px;
         background-color: #ffffff;
         border-radius: 2px;
-        transition: transform 0.3s ease, opacity 0.3s ease;
+        transition:
+            transform 0.3s ease,
+            opacity 0.3s ease;
     }
 
     .container {

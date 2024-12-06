@@ -1,3 +1,4 @@
+
 <nav class="sidebar">
     <ul>
         <li id="1" onmouseup={() => roulette()} onmouseenter={() => moveLink(1)}><a>Accueil</a></li>
@@ -54,7 +55,6 @@
 <script>
     import { gsap} from 'gsap';
     import {goto} from "$app/navigation";
-
 
     function roulette(){
 
