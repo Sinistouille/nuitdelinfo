@@ -1,6 +1,5 @@
 <script>
     let { children } = $props();
-    let showMenu = $state(false);
 
     // Vous pouvez ajouter des données dynamiques ici si nécessaire.
     import Menu from '$lib/components/menu.svelte';
@@ -8,15 +7,7 @@
 </script>
 
 <div class="container">
-    {#if showMenu} 
     <Menu></Menu>
-    {:else}
-     <button class="hamburger-button" onclick={() => showMenu = !showMenu}>
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-    </button>
-    {/if}
     <div class="content">
         <main>
             {@render children()}
@@ -25,32 +16,6 @@
     </div>
 </div>
 <style>
-            /* Bouton hamburger */
-            .hamburger-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 50px;
-            height: 50px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-
-        /* Lignes du menu */
-        .hamburger-button .line {
-            width: 100%;
-            height: 5px;
-            background-color: #ffffff;
-            border-radius: 2px;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
     .container {
         display: flex;
         min-height: 100vh;
@@ -61,6 +26,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
+        padding: 20px;
     }
 
     main {

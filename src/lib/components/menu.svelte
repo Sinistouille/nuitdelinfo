@@ -14,6 +14,8 @@
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         background: #162751ff;
         font-weight: bold;
+        height: 100%;
+        min-height: fit-content;
     }
 
     nav ul {
@@ -54,7 +56,7 @@ function roulette(){
 
     const img = document.getElementById("roulette");
     const div = document.getElementById("div-roulette");
-    const p = document.getElementById("p-roulette");
+    //const p = document.getElementById("p-roulette");
     if(!img){
         console.error("Element with id 'roulette' not found.");
         return;
