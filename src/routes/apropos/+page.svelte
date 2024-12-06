@@ -13,7 +13,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        justify-content: center;
         margin: 10px 50px;
         background-color: white;
         padding: 20px;

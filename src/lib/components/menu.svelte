@@ -3,7 +3,7 @@
         <li id="1" onmouseup={() => roulette()} onmouseenter={() => moveLink(1)}><a>Accueil</a></li>
         <li id="2" onmouseup={() => roulette()} onmouseenter={() => moveLink(2)}><a>L'humain au coeur de l'océan</a></li>
         <li id="3" onmouseup={() => roulette()} onmouseenter={() => moveLink(3)}><a>A propos</a></li>
-        <li id="4" onmouseup={() => roulette()} onmouseenter={() => moveLink(4)}><a>Contact</a></li>
+        <li id="4" onmouseup={() => roulette()} onmouseenter={() => moveLink(4)}><a>Credits</a></li>
     </ul>
 </nav>
 <style>
@@ -117,7 +117,7 @@
                     goto("/apropos");
                     break;
                 case 4:
-                    goto("/");
+                    goto("/credits");
                     break;
                 default:
                     goto("/");
