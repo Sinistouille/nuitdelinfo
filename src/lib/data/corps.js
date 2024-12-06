@@ -1,7 +1,10 @@
+import coeur from '$lib/assets/coeur.png'
+
 export const organes = [
 	{
 		id: 'coeur',
 		title: 'Le Cœur',
+		image: coeur,
 		content:
 			`<p>La base de l'humanité, le symbole de la passion. Le cœur humain pompe avec ardeur, nourrit le corps tout entier, et on retrouve la même ardeur, bien que moins visible. L’océan, aussi vaste et abyssal soit-il, tourne et se renouvelle à la manière d’un sang azur grâce à la circulation thermohaline, ou on peut également parler de circulation méridienne de retournement, et ce système si technique façonné par Mère Nature ne doit être détraqué.</p>
 			<p>Malheureusement, cette sagesse n’a pas forcément été instruite, ou peut-être oubliée, et son bon fonctionnement en a fini déséquilibré. Le ralentissement de la circulation méridienne de retournement, selon de nombreux experts, s’accompagne de conséquences désastreuses comme des saisons plus marquées, des tempêtes plus fréquentes et une augmentation du niveau des mers. Ces symptômes sont ceux d’un cœur de la mer malade, assurément, tout comme un cœur humain malade se ferait sentir par des affaiblissements, des malaises, et d'autres symptômes.</p>
@@ -38,5 +41,11 @@ export const organes = [
 			<p>En cas de dysfonctionnement de ce système, c’est la catastrophe : les toxines s’accumulent dans le corps, entraînant un jaunissement de la peau et une diminution de la capacité immunitaire.</p>
 			<p>De la même façon, l’océan a ses mécanismes de nettoyage intégrés. Les océans sont vastes et en constante agitation grâce aux courants marins, aux vagues et aux marées. Ces mouvements permettent de diluer les polluants, réduisant leur concentration locale. Ensuite, des micro-organismes marins jouent un rôle clé en dégradant certains polluants organiques, tels que les hydrocarbures. Ces organismes transforment les substances toxiques en composés moins nocifs ou inoffensifs.</p>
 			<p>Malheureusement, cette mécanique bien réglée est mise à mal par le changement climatique qui, en augmentant la température de l’eau, augmente son absorption de CO2. Cela cause une acidification des océans qui est nocive pour les organismes marins, dont ceux qui sont essentiels à la régulation des polluants ! Et là, l’océan tombe malade…</p>`
+	},
+	{
+		id: 'inconnu',
+		title: 'Choisissez un organe',
+		content:
+			'Cliquez sur un organe ogheuogheaurogheuoeghzioghizoghzeioghiozghzioghzioghzioue'
 	},
 ];

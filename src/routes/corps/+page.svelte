@@ -10,15 +10,15 @@
         const x = event.clientX - rect.left; // Position X relative à l'image
         const y = event.clientY - rect.top; // Position Y relative à l'image
         // zone du clique
-        if (x > 200 && x < 240 && y > 250 && y < 300) {
+        if (x > 170 && x < 200 && y > 150 && y < 210) {
             curr = "coeur";
         } else if (x > 270 && x < 350 && y > 360 && y < 500) {
             curr = "rate";
         } else if (x > 150 && x < 270 && y > 0 && y < 100) {
             curr = "cerveau";
-        } else if (x > 100 && x < 290 && y > 200 && y < 350) {
+        } else if (x > 100 && x < 290 && y > 100 && y < 235) {
             curr = "poumons";
-        } else if (x > 100 && x < 270 && y > 360 && y < 500) {
+        } else if (x > 115 && x < 200 && y > 235 && y < 300) {
             curr = "foie";
         } else {
             curr = "inconnu"; // Si le clic est en dehors des zones définies
@@ -26,18 +26,20 @@
         currOrganes = organes.find((organe) => organe.id === curr);
     }
 </script>
-
 <h1>Cliquer sur l'image pour identifier une partie</h1>
 <div class="body-wrapper">
     <img
         src={human_body}
         alt="Image anatomique"
         on:click={handleClick}
-        style="width: 400px; height: auto; border: 1px solid black;"
+        style="width: 400px; height: auto;"
     />
 
     <div class="container">
+        <div class="OrganeTitle">
+            <img src={currOrganes.image} alt={currOrganes.id}/>
         <h1>{currOrganes.title}</h1>
+        </div>
         <p>{@html currOrganes.content}</p>
     </div>
 </div>
@@ -54,5 +56,9 @@
     }
     .container {
        grid-area: 1;
+    }
+    .OrganeTitle {
+        display: flex;
+        align-items: center;
     }
 </style>
