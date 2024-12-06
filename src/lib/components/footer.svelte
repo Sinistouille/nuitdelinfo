@@ -24,6 +24,8 @@
         font-weight: bold;
         text-shadow: black 0.1em 0.1em 0.2em;
         opacity: 1;
+        margin: 0;
+        padding: 0;
     }
 
 

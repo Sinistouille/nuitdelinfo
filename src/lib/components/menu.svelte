@@ -8,7 +8,8 @@
 </nav>
 <style>
     nav {
-        width: 250px;
+        width: 10%;
+        min-width: fit-content;
         color: #ffffff;
         padding: 20px;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -21,7 +22,6 @@
         list-style: none;
         padding: 0;
         display: flex;
-        justify-content: space-around;
         flex-direction: column;
         height: 70%;
         margin: 0;
@@ -41,14 +41,17 @@
         text-align: center;
         font-size: 1.2em;
         margin: auto;
+        padding: 20px;
         width: auto;
+        border-radius: 10px;
         transition: color 0.3s ease;
     }
 
     nav a:hover {
-        color: #162751ff;
+        color: #62B3E4ff;
         /*casual cursor*/
         cursor: default;
+        background: #080E1Eff;
     }
 </style>
 <script>
