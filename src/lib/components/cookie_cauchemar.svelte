@@ -1,14 +1,17 @@
 <script>
     import logorace from "$lib/assets/logo race water.jpg"
     import cookie from "$lib/assets/cookie.jpg"
+    import { gsap } from 'gsap';
     let showPopUp = $state(true);
     let ChainPopUp = $state(0);
     let counter = $state(0);
 
     function increase() {
-        counter += 1;
-        showPopUp = counter < 100;
-    }
+  counter += 1;
+  if (counter >= 100) {
+    gsap.to('#consentBox', { opacity: 0, duration: 0.5, ease: 'power2.in' });
+  }
+}
 </script>
 {#if showPopUp}
     
@@ -33,8 +36,18 @@
             {/if}
         </p>
         <div class="buttons">
-            <button class= {ChainPopUp === 1 ? "consentButton red" : "consentButton"} onclick={() => showPopUp = false}>Accepter</button>
-            <button class="rejectButton" onclick={() => ChainPopUp += 1} style={ChainPopUp > 1 ? "display: none":""}>
+          <button class={ChainPopUp === 1 ? "consentButton red" : "consentButton"} 
+            onclick={() => {
+              gsap.to('#consentBox', { opacity: 0, duration: 0.5, ease: 'power2.in' });
+              setTimeout(() => {
+               showPopUp = false;
+              }, 500);
+            }}>
+            Accepter
+          </button>
+
+
+          <button class="rejectButton" onclick={() => ChainPopUp += 1} style={ChainPopUp > 1 ? "display: none":""}>
                 {#if ChainPopUp === 0}
                     En savoir plus
                 {:else if ChainPopUp === 1}
