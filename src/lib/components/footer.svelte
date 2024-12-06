@@ -4,8 +4,7 @@
         <p class="anim">Contactez nous</p>
         <p class="anim">Instagram</p>
         <p class="anim">Facebook</p>
-        <p class="anim">Tags</p>
-        <p class="anim">lorem ipsum dolor sit amet</p>
+
     </div>
 </footer>
 <style>
@@ -24,6 +23,8 @@
         font-weight: bold;
         text-shadow: black 0.1em 0.1em 0.2em;
         opacity: 1;
+        margin: 0;
+        padding: 0;
     }
 
 
