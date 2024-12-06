@@ -55,7 +55,7 @@ export const organes = [
 			`<p>Le besoin le plus vital du corps humain est l’oxygène. En tant que tel, notre corps nécessite plus que tout d’être oxygéné au travers du sang, tout comme la circulation thermohaline fait traverser les eaux, et un fléau qui frappe tout autant les océans que nos corps peut être la désoxygénation. Et si votre cerveau ne recevait plus d’oxygène hein ? Vous le savez clairement, ça entraînerait de graves conséquences, court ou long terme.</p>
 			<p>Et il faut bien s’imaginer que c’est quelque chose qui arrive très fréquemment pour notre océan, l’accumulation de dioxyde de carbone crée des zones de désoxygénation graves, qui entraînent le réchauffement climatique (c’en est une cause reconnue) et aussi l’eutrophisation. L’eutrophisation, il s’agit de zones ultra concentrées en nutriments, qui sont dangereuses car ça sature et empêche la propagation de ces nutriments. Imaginez que votre corps soit saturé de nutriments en un seul endroit, laissant le reste affamé, c’est ce qui se passe.</p>
    			<p>Au bout du compte, ces processus si vitaux n’ont aucun droit d’être arrêtés, voler l’oxygène amène à la mort, quel que soit l’organisme. Réfléchissez-y à deux fois avant de dérober l’oxygène de l’océan, qui vous maintient en vie.</p>
-      			<p>Source : https://ocean-climate.org/la-desoxygenation-de-locean/</p>
+      			<p>Source : <a href=https://ocean-climate.org/la-desoxygenation-de-locean/>ocean climate.org</a></p>
       			`
 	},
     {
