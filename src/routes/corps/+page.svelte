@@ -32,15 +32,15 @@
         src={human_body}
         alt="Image anatomique"
         on:click={handleClick}
-        style="width: 400px; height: auto;"
+        style="width: 400px; height: auto"
     />
 
-    <div class="container">
+    <div class="OrganeText">
         <div class="OrganeTitle">
-            <img src={currOrganes.image} alt={currOrganes.id}/>
-        <h1>{currOrganes.title}</h1>
+            <img src={currOrganes.image} alt={currOrganes.id} style="max-height: 100px"/>
+        <h1 style="flex-grow: 1;">{currOrganes.title}</h1>
         </div>
-        <p>{@html currOrganes.content}</p>
+        <div style="flex-grow: 1;">{@html currOrganes.content}</div>
     </div>
 </div>
 
@@ -48,15 +48,19 @@
     .body-wrapper {
         display: flex;
         gap: 100px;
-        align-items: flex-start;
-        margin: 10px 50px;
+        align-items: center;
+        margin: 10px 10%;
         background-color: white;
         padding: 20px;
         border-radius: 10px;
     }
-    .container {
-       grid-area: 1;
-    }
+    .OrganeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    flex-grow: 1; /* Permet de s'étendre si nécessaire */
+    gap: 20px; /* Ajoute un espace entre les enfants */
+}
     .OrganeTitle {
         display: flex;
         align-items: center;
