@@ -5,18 +5,17 @@
 <ChasseLogo />
 <div class="HeaderRoot">
     <section id="about" class="HeaderSection">
-        <h1 class="HeadingTitle">Welcome to Ocean World</h1>
+        <h1 class="HeadingTitle"></h1>
         <p>
-            Explore the depths of the ocean and its wonders. Learn about marine
-            life, oceanography, and how to protect our seas.
+            Bienvenue dans une immersion unique qui changera votre rapport à l'océan
+
         </p>
     </section>
 </div>
 <div id="content-descriptor">
-<h2>About the Ocean</h2>
 <p>
-    The ocean covers over 70% of our planet and is home to an incredible
-    diversity of life. Dive in to discover more!
+    Le but de cette expérience est de vous senbiliser à l'importance des océans dans la vie sur Terre.<br>
+    Mais aussi que cet océan a certaines fonctions qui pourraient être assimilées à celles du corps humains
 </p>
 </div>
 <style>
