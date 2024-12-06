@@ -1,13 +1,14 @@
 <script>
     function loadSvelte(){
         const div = document.getElementById("prev-svelte");
+
         if(!div){
             return
         }
         if(div.innerHTML !== "")
             div.innerHTML = "";
         else
-            div.innerHTML = "<iframe src=\"https://svelte.dev\" title=\"Svelte Website Preview\" frameborder=\"0\" width=\"70%\" height=\"400px\"></iframe>";
+            div.innerHTML = "<iframe src=\"https://svelte.dev\" title=\"Svelte Website Preview\" frameborder=\"0\" width=\"" + window.innerWidth * 0.8 + "\" height=\"" + window.innerHeight * 0.9 + "\"></iframe>";
     }
 </script>
 
@@ -26,5 +27,8 @@
     a {
         color: #162751;
         text-decoration: underline;
+    }
+    #prev-svelte{
+        position: fixed;
     }
 </style>

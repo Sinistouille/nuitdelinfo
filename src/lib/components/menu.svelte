@@ -9,7 +9,7 @@
 </nav>
 <style>
     nav {
-        width: 10%;
+        width: 8%;
         min-width: fit-content;
         color: #ffffff;
         padding: 20px;
@@ -43,9 +43,9 @@
         font-size: 1.2em;
         margin: auto;
         padding: 20px;
-        width: auto;
         border-radius: 10px;
         transition: color 0.3s ease;
+        width: 80%;
     }
 
     nav a:hover {

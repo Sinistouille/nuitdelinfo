@@ -87,6 +87,7 @@
 
     main {
         flex: 1;
+        padding-left: 10%;
     }
 
     h1 {
