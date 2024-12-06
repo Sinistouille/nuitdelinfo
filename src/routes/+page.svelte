@@ -22,6 +22,7 @@
 <style>
     #content-descriptor{
         margin: 20px;
+
     }
     .HeaderRoot {
         background-attachment: fixed;
